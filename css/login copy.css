@@ -1,0 +1,78 @@
+.login {
+  inline-size: 100%;
+  block-size: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.form-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  inline-size: 300px;
+}
+
+.logo {
+  inline-size: 150px;
+  margin-block-end: 48px;
+  justify-self: center;
+  display: none;
+}
+
+.title {
+  font-size: var(--lg);
+  margin-block-end: 12px;
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--very-light-pink);
+  font-size: var(--md);
+  font-weight: 300;
+  margin-block-start: 0;
+  margin-block-end: 32px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: var(--sm);
+  font-weight: bold;
+  margin-block-end: 4px;
+}
+
+.input {
+  background-color: var(--text-input-field);
+  border: none;
+  border-radius: 8px;
+  block-size: 30px;
+  font-size: var(--md);
+  padding: 6px;
+  margin-block-end: 12px;
+}
+
+.primary-button {
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  inline-size: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  block-size: 50px;
+}
+
+.login-button {
+  margin-block-start: 14px;
+  margin-block-end: 30px;
+}
+
+@media (max-width: 640px) {
+  .logo {
+    display: block;
+  }
+}

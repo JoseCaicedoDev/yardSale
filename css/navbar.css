@@ -1,0 +1,77 @@
+nav{
+  height: 60px;
+  display: flex;
+/*   inline-size: 100%; */
+  justify-content: space-between;
+  padding-inline: 24px;
+  border-block-end: 1px solid var(--very-light-pink);
+}
+.menu{
+  display: none;
+}
+.logo{
+  inline-size: 100px;
+}
+.navbar-left{
+  display: flex;
+}
+.navbar-left ul{
+  margin-inline-start: 12px;
+}
+
+.navbar-left ul,
+.navbar-right ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+/*   margin-block-end: 24px; */
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.navbar-left ul a{
+  text-decoration: none;
+  color: var(--very-light-pink);
+  border: 1px solid var(--white);
+  padding: 8px;
+  border-radius: 8px;
+}
+.navbar-left ul a:hover{
+  color: var(--hospital-green);
+  border: 1px solid var(--hospital-green);
+}
+.navbar-email{
+  color: var(--very-light-pink);
+  font-size: var(--sm);
+  margin-inline-end: 12px;
+}
+.navbar-shopping-cart{
+  position: relative;
+}
+.navbar-shopping-cart div{
+  position: absolute;
+  inline-size: 16px;
+  block-size: 16px;
+  background-color: var(--hospital-green);
+  border-radius: 50%;
+  font-size: var(--sm);
+  font-weight: bold;
+  top: -6px;
+  right: -3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 640px){
+  .menu{
+    display: block;
+    width: 30px;
+  }
+  .navbar-left ul{
+    display: none;
+  }
+  .navbar-email{
+    display: none;
+  }
+}
